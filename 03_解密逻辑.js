@@ -8592,7 +8592,8 @@ function get_jiemi_data(qccppm,response) {
 
 
 
-    //处理完各种复杂的逻辑后，最终函数内，传值加密数据，自动调用jiemi
+    // 处理完各种复杂的逻辑后，最终函数内，传值加密数据，自动调用jiemi
+    // 关键核心函数
     function jiemi(response){
     _0x316c29 = function(_0x50d2de) {
         var _0x57bf1e = _0xa6527a
@@ -8636,5 +8637,4 @@ function get_jiemi_data(qccppm,response) {
 }
     data = jiemi(response)
     return data;
-
 }

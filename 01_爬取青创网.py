@@ -1,13 +1,15 @@
 import requests
 import json
-import subprocess
-from functools import partial #用来固定某个参数的固定值
-subprocess.Popen=partial(subprocess.Popen,encoding='utf-8')
 import re
 import execjs
 import time
 import random
 import csv
+
+import subprocess
+from functools import partial   # 偏函数用来固定某个参数的固定值，防止编码问题
+subprocess.Popen=partial(subprocess.Popen,encoding='utf-8')
+
 class Crawl_qingchuangwang:
     # keyword为搜索关键词
     def __init__(self,keyword):

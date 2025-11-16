@@ -14,12 +14,13 @@ class Crawl_qingchuangwang:
         self.url = "https://newopenapiweb.17qcc.com/api/services/app/SearchFactory/GetPageList"
 
         # headers需要自己去复制替换！！
+        # headers去除 "accept-encoding"键值对！！！
         self.headers = {
             "accept": "application/json, text/javascript, */*; q=0.01",
-            "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-            "app-guestid": "24967DED898936B3B31AC57D5F9B6973",
+            # "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9",
+            "app-guestid": "677369A20DF99686284CAC0C59AB658D",
             "app-version": "0",
-            "authorization": "Bearer wNYmO41/48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA/QhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi/FyB6axBY+6gq1GL+uRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U+og9pkHw9/Skc+w71JNcZzDPK9Etj0loJfyj+sMvMKO3C1e15tO28ZNuEhr1q4zzwgC4JTMRKRPAc1/FA/GzbvtLGYPwSgjO2tc+8q7NOQY9kuZHTkK+GOHqb+WjdIxpRvQdBW/cAnEzf1FPw7XAOrpHSKuX4na7z8lIDsrlH0eV9SFcgY+vlDnvzhOeTF6am7xdRYmGnJFV0SjFUQ7OnlkZAqfZZNnHxpQl8NsfmXocySJzQ+CeR4UPV9QgZAycEEUxwP+wkYdHMORiLb0Q1Qo7CUX17rjILVvx1WbY3GMUayoX97qxAnRK/ems49RGLs3mx3QX8sw8n6YlIzRVcvF/ZcIK2IpxauX2xivhkp0ahBOO7BezG9xRBaRjArb/q8Z4/UZ//aHqGa4rZBcd2aY0LshY6+QUpjPgwGKiSHg1Gj/Q0TA0fNKDssgeQe3pDM/4ixywf2MmdeVVYejPfvO4LesZdkRXZ0StjmNW3xMu4gQay0VvkqAw1CMGqsgnUT73DoJCffM=",
             "cache-control": "no-cache",
             "content-length": "774",
             "content-type": "application/json",
@@ -27,13 +28,13 @@ class Crawl_qingchuangwang:
             "pragma": "no-cache",
             "priority": "u=1, i",
             "referer": "https://www.17qcc.com/",
-            "sec-ch-ua": "\"Chromium\";v=\"142\", \"Microsoft Edge\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+            "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": "\"Windows\"",
             "sec-fetch-dest": "empty",
             "sec-fetch-mode": "cors",
             "sec-fetch-site": "same-site",
-            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
         }
 
         self.keyword = keyword
